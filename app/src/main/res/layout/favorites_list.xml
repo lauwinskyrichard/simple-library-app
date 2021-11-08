@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favoritesList"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="20dp"
+    android:outlineAmbientShadowColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tvFavName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/delBtn"
+            android:text="Delete"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_border"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordTV"
+        android:text="Word: "
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/defTV"
+        android:text="Definition:"
+        android:textSize="25dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:layout_below="@+id/wordTV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/exploreDetailRV"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/defTV"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/ex_definitions_list"
+        android:layout_above="@id/saveDetailBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveDetailBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_border"/>
+
+</RelativeLayout>
